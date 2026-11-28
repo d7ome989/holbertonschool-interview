@@ -32,11 +32,13 @@ equals the number of primes between `1` and `n`.
 
 ### Functions
 
-| Function            | Role                                             |
-|---------------------|--------------------------------------------------|
-| `is_prime(num)`     | Returns `True` if `num` is prime, else `False`   |
-| `count_primes(n)`   | Counts the primes between `1` and `n`            |
-| `isWinner(x, nums)` | Plays the rounds and returns the overall winner  |
+| Function                    | Role                                            |
+|-----------------------------|-------------------------------------------------|
+| `count_primes_up_to(limit)` | Lists the number of primes up to each number    |
+| `isWinner(x, nums)`         | Plays the rounds and returns the overall winner |
+
+The primes are found with the Sieve of Eratosthenes, once, up to the largest
+`n`. Each round then reads its prime count directly from the list.
 
 ## Usage
 
